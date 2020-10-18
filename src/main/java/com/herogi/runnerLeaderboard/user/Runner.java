@@ -1,10 +1,12 @@
 package com.herogi.runnerLeaderboard.user;
 
+
+
 public class Runner {
 	private int id;
 	private String runnerName;
 	private String runnerAge;
-	private String runnerSex;
+	private String runnerSex = "Unknown";
 	private String runnerDistance;
 	private String runnerAvgPace;
 	private String runnerTotalTime;
@@ -13,10 +15,10 @@ public class Runner {
 		
 	}
 
-	public Runner(int id, String runnerName, String runnerAge, String userSex, String runnerDistance, String runnerAvgPace,String runnerTotalTime) {
+	public Runner(int id, String runnerName, String runnerAge, String runnerSex, String runnerDistance, String runnerAvgPace,String runnerTotalTime) {
 		this.runnerName = runnerName;
 		this.runnerAge = runnerAge;
-		this.runnerSex = userSex;
+		this.runnerSex = runnerSex;
 		this.runnerDistance = runnerDistance;
 		this.runnerAvgPace = runnerAvgPace;
 		this.runnerTotalTime = runnerTotalTime;
